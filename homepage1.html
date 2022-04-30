@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+      /* navbar css start */
+
+      .navbar {
+        width: 100%;
+        overflow: hidden;
+
+        /* background-color: #dd0285; */
+      }
+
+      .navbar a {
+        float: right;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      .dropdown {
+        float: left;
+        overflow: hidden;
+        margin-left: 10px;
+        /* width:100%; */
+      }
+
+      .dropdown .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        /* color: white; */
+        padding: 14px 16px;
+        background-color: inherit;
+        font: inherit;
+        margin: 0;
+        font-weight: bold;
+      }
+
+      /* .navbar a:hover, */
+      .dropdown:hover.dropbtn {
+        /* background-color: white; */
+      }
+
+      .dropdown-content {
+        /* width:60%; */
+        display: none;
+        position: absolute;
+        background-color: white;
+        /* width: 30%; */
+        left: 0;
+        box-shadow: 0px 8px 16px 0px rgba(238, 236, 236, 0.938);
+        z-index: 1;
+      }
+
+      .dropdown-content .header {
+        /* width:60%; */
+        background: white;
+        padding: 16px;
+        color: white;
+      }
+
+      .dropdown:hover .dropdown-content {
+        width:100%;
+        display: block;
+        margin-left: 10px;
+      }
+      .column {
+        margin-top: -10px;
+      }
+
+      /* Create three equal columns that floats next to each other */
+      .column {
+        float: left;
+        width: 16%;
+        /* height:50px; */
+        padding: 10px;
+        margin-right: 10px;
+
+        margin-left: 10px;
+      }
+      .adut{
+        height:280px;
+        width:100%;
+      }
+      .brands {
+        display: flex;
+        justify-content: space-between;
+        border-top: 2px solid rgb(148, 148, 148);
+        margin-bottom: -18px;
+      }
+      .brands > h3:nth-child(2) {
+        font-size: 15px;
+        background-color: #dd0285;
+        color: white;
+        padding: 9px;
+      }
+
+      #bransformation {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 17px;
+        margin-top: 20px;
+      }
+      #bransformation > div {
+        padding: 10px 15px 10px 15px;
+        text-align: center;
+        border: 1px solid rgb(148, 148, 148);
+      }
+      #bransformation > div:hover {
+        background-color: #b8b4b4fa;
+      }
+      .extra {
+        float: left;
+        /* width: 30%; */
+        height: 140px;
+        padding: 10px;
+        margin-right: 10px;
+
+        /* margin-left: 10px; */
+      }
+
+      .column a {
+        float: none;
+        color: #666666;
+        font-size: 13px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        margin-bottom: -16px;
+        margin-left: -14px;
+        margin-top: -20px;
+      }
+
+      .navbar a:hover {
+        color: #c60277;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }#inp{
+          width : 250px;
+          height:30px;
+          margin-left: 80px;
+      }
+      #adutbox1{
+        width:100vw;
+        height:800px;
+        border: 2px solid red ;
+       /* margin-right:100px ; */
+        /* margin-top: 100px; */
+      }
+      /* <---------navbar css ends---------------> */
+
+</style>
+<body>
+    <div class="navbar">
+        <div class="dropdown">
+          <button class="dropbtn">
+          New In
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <div class="row">
+              <div class="column">
+                <h5>WHAT'S NEW</h5>
+                <a href="makeup_bb_cream.html">New:New In </a>
+                <a href="makeup_blush.html">New:Class</a>
+                <a href="#">New:Classic </a>
+                <a href="#">New:Experiment </a>
+                <a href="makeup_counter.html">New:Glamour </a>
+                <a href="#">New: hype-street wear</a>
+                <a href="#">Newminimalism</a>
+                <a href="#">New:Modern feminity </a>
+                <a href="#">Foundation </a>
+                <a href="#">Highlighters </a>
+                <a href="#">Loose Powder </a>
+               
+              </div>
+              <div class="column">
+                <h5>TRENDING NOW</h5>
+                <a href="#"> Color-Pop up</a>
+                <a href="#"> 52 Platforms </a>
+                <a href="#">Y2k style </a>
+                <a href="#"> Eye Shadow </a>
+                <a href="#"> Eye Primer </a>
+                <a href="#"> Eye-Palettes </a>
+                
+              </div>
+              <div class="column">
+                <h5>DISCOVER</h5>
+                <a href="#">99 New season must-haves</a>
+                <a href="#">back by popular-demand</a>
+                <a href="#">Exclusive&collabs</a>
+                <a href="#">25 name to know</a>
+               
+              </div>
+  
+              <div class="column">
+                <h5>THE HIGHTLIGHTS</h5>
+                <a href="#">All Articles</a>
+                <a href="#">Street styles</a>
+                <a href="#">How to</a>
+                <a href="#">Brands we love</a>
+                <a href="#">Boutique directory</a>
+                <a href="#">conscious fashion</a>
+              </div>
+              <div class="column">
+              <div>  <img  class="adut" src="https://cdn-static.farfetch-contents.com/content/images/Home_CMS/Cms/27_04_2022/WW/27-04-WW-NEW-IN-MINIS.jpg" alt="" /></div>
+               <div > Spotlight On</div>
+               <div> 65 NEW-SEASON MINIS</div>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">
+         Shop By
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <div class="row">
+              <div class="column">
+                <h5>MOMENTS</h5>
+                <a href="skin1.html">modern wedding </a>
+                <a href="#">The resort collection</a>
+                <a href="#">Party wear</a>
+                <a href="#"> Find the perfect gift </a>
+                <!-- <a href="#"> Eye Serums </a>
+                <a href="#">Puffiness </a>
+                <a href="#">Under Eye Creams </a>
+                <a href="#">Under Eye Wrinkles</a> -->
+              </div>
+              <div class="column">
+                <h5>DISCOVER</h5>
+                <a href="#">The best Sellers </a>
+                <a href="#">150 most-wanted pieces</a>
+                <a href="#"> conscious </a>
+                <a href="#">Fashion Icons </a>
+                <a href="#"> Top 100 iconic bags </a>
+                <a href="#"> Face Oil </a>
+                <a href="#"> Face Cleansers </a>
+                <a href="#"> Facial Kits </a>
+                <a href="#"> Face Tools </a>
+                <a href="#"> Moisturizer </a>
+                <a href="#"> Mask & Peels </a>
+                <a href="#">Serum</a>
+                <a href="#">Toner & Astringents</a>
+              </div>
+              <div class="column">
+                <h5>BEAUTIQUE GUIDE </h5>
+                <a href="#"> The classic edit</a>
+                <a href="#">The expressionist edit</a>
+                <a href="#">The modern feminity</a>
+                <a href="#">The minimalist</a>
+                <a href="#">Brightening Lotion</a>
+                <!-- <a href="#">Dark Circles & Wrinkles</a> -->
+                <!-- <a href="#"> Day Cream</a>
+                <a href="#">Foot Cream</a>
+                <a href="#"> Hair Remover Cream</a>
+                <a href="#"> Hand Creams</a>
+                <a href="#">Hands & Feet</a>
+                <a href="#"> Kits & Combost</a>
+                <a href="#"> Night Cream</a>
+                <a href="#"> Neck Creams</a> -->
+              </div>
+  
+              <div class="column">
+                <div>  <img  class="adut" src="https://cdn-static.farfetch-contents.com/content/images/Home_CMS/Cms/27_04_2022/WW/27-04-WW-SHOP_BY-NEW_NAMES_TO_KNOW.jpg" alt="" /></div>
+                 <div > Spotlight On</div>
+                 <div> 65 NEW-SEASON MINIS</div>
+                 
+                </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="dropdown">
+          <button class="dropbtn">
+           Brands
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <div class="row">
+              <div class="column">
+                <h5>featured brands</h5>
+                <a href="#">Color Protection </a>
+                <a href="#">Dandruff</a>
+                <a href="#">Dry Shampoo</a>
+                <a href="#"> Gels & Waxes </a>
+                <a href="#">Hair Spray</a>
+                <a href="#">Hair Color/ Dye</a>
+                <a href="#">Hair Creams & Masks </a>
+                <a href="#">Hair Styling</a>
+                <a href="#">Hairfall & Thinning </a>
+                <a href="#">Straighteners </a>
+              </div>
+              <div class="column">
+                <h5>BRANDED</h5>
+                <a href="#"> Conditioner </a>
+                <a href="#"> Hair Oil </a>
+                <a href="#"> Hair Serum </a>
+                <a href="#"> Hair Growth Solutions </a>
+                <a href="#"> Shampoo </a>
+              </div>
+              <div class="column">
+                <h5><img class="adut"src="https://cdn-static.farfetch-contents.com/content/images/Home_CMS/Cms/27_04_2022/WW/27-04-WW-DESIGNER-VERSACE.jpg" alt="" /></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="dropdown">
+          <button class="dropbtn">
+           Clothing
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <div class="row">
+              <div class="column">
+                <h5>CLOTHING</h5>
+                <a href="#">Body Cleansers </a>
+                <a href="#">Body Massage Oil</a>
+                <a href="#">Body Wash</a>
+                <a href="#"> Creams </a>
+                <a href="#">Essential Oils</a>
+                <a href="#">Foot Cream</a>
+                <a href="#">Scrubs & Exfoliants </a>
+                <a href="#">Ubtan & Face Packs</a>
+              </div>
+              <div class="column">
+                <h5>FEATURED BRANDS</h5>
+                <a href="personal_care_bath_brushes.html"> Bath Brushes </a>
+                <a href="personal_care_loofahs.html"> Loofahs </a>
+                <a href="#"> Shower Caps </a>
+                <a href="#"> Sponges </a>
+              </div>
+              <div class="column">
+                <h5>DISCOVER</h5>
+                <a href="#"> Body Soaps </a>
+                <a href="#"> Shower Ge </a>
+                <a href="#"> Shower Caps </a>
+              </div>
+              <div class="column">
+                <h5><img class="adut" src="https://cdn-static.farfetch-contents.com/content/images/Home_CMS/Cms/30_03_2022/WW/30-03-WW-CLOTHING%E2%80%93BEACHWEAR.jpg" alt="" /></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">
+          Shoes
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <div class="row">
+              <div class="column">
+                <h5>SHOES</h5>
+                <!-- <a hr></a>ef="#">Bath Time </a> -->
+                <!-- <a href="mom_baby_care_wips.html">Diapers</a> -->
+                <a href="#">Lotions & Creams</a>
+                <a href="#"> Creams </a>
+                <a href="#"> Oils</a>
+                <a href="#">Powder</a>
+                <a href="#">Shampoo</a>
+                <a href="#">Soaps</a>
+                <a href="#">Sterilizer & Cleaners</a>
+                <a href="#">Rash Cream</a>
+                <a href="mom_baby_care_wips.html">Wipes</a>
+              </div>
+              <div class="column">
+                <h5>FEATURED BRANDS</h5>
+                <a href="#"> Lotions & Creams </a>
+                <a href="#"> Personal Care </a>
+              </div>
+              <div class="column">
+                <h5>DONATE&REPAIR</h5>
+                <a href="#"> Lotions & Creams </a>
+                <a href="#"> Personal Care </a>
+              </div>
+              <div class="column">
+                <h5><img class="adut" src="https://cdn-static.farfetch-contents.com/content/images/Home_CMS/Cms/30_03_2022/WW/30-03-WW-SHOES-PLATFORM.jpg" alt="" /></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">
+           Bags
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <div class="row">
+              <div class="column">
+                <h5></h5>
+                <a href="#"> Perfumes </a>
+                <a href="#">Deodorants roll ons</a>
+                <a href="#">Body Mist/Spray</a>
+              </div>
+              <div class="column">
+                <h5><img class="adut"src="https://cdn-static.farfetch-contents.com/content/images/Home_CMS/Cms/30_03_2022/WW/30-03-WW-BAGS%E2%80%93TOTE.jpg" alt="" /></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="dropdown">
+          <button class="dropbtn">
+         Accessories
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <div class="row">
+              <div class="column">
+                <h5>NATURAL SKIN CARE</h5>
+  
+                <a href="#">Body Wash </a>
+                <a href="#">Body Lotion</a>
+                <a href="#">Lotions & Creams</a>
+                <a href="#"> Cleansers </a>
+                <a href="#"> Cream</a>
+                <a href="#">Eye Care</a>
+                <a href="#">Face Wash</a>
+                <a href="#">Gel</a>
+                <a href="#">Lip Care</a>
+                <a href="#">Mask</a>
+                <a href="#">Pack</a>
+                <a href="#">Scrub</a>
+                <a href="#">Sun Protection</a>
+              </div>
+              <div class="column">
+                <h5>ATURAL HAIR CARE</h5>
+                <a href="#"> Conditioner</a>
+                <a href="#"> Hair Oils </a>
+                <a href="#"> Hair Serum </a>
+                <a href="#"> Hair Gel</a>
+                <a href="#"> Shampoo</a>
+              </div>
+              <div class="column">
+                <h5><img class="" src="https://cdn-static.farfetch-contents.com/content/images/Home_CMS/Cms/30_03_2022/WW/30-03-WW-ACCESSORIES-HATS.jpg" alt="" /></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="dropdown">
+          <button class="dropbtn">
+           Jwellery
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <div class="brands">
+              <h3>Top Brands</h3>
+              <h3>View All</h3>
+            </div>
+            <div class="row brands">
+              <div class="column extra">
+                <div id="bransformation">
+                  <div>LAKME</div>
+                  <div>lOREAL-PARIS</div>
+                  <div>JOY</div>
+                  <div>AROMA MAGIC</div>
+                  <div>LOTUS HERBALS</div>
+                  <div>BIOTIQUE</div>
+                  <div>VLCC</div>
+                  <div>VEGA</div>
+                  <div>MAYBELLINE</div>
+                  <div>MAMAEARTH</div>
+                  <div>CHICCO</div>
+                  <div>NEUTROGENA</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">
+            Pre-owned
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <div class="brands">
+                <h3>Top Brands</h3>
+                <h3>View All</h3>
+              </div>
+              <div class="row brands">
+                <div class="column extra">
+                  <div id="bransformation">
+                    <div>LAKME</div>
+                    <div>lOREAL-PARIS</div>
+                    <div>JOY</div>
+                    <div>AROMA MAGIC</div>
+                    <div>LOTUS HERBALS</div>
+                    <div>BIOTIQUE</div>
+                    <div>VLCC</div>
+                    <div>VEGA</div>
+                    <div>MAYBELLINE</div>
+                    <div>MAMAEARTH</div>
+                    <div>CHICCO</div>
+                    <div>NEUTROGENA</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">
+                Sale
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <div class="brands">
+                    <h3>Top Brands</h3>
+                    <h3>View All</h3>
+                  </div>
+                  <div class="row brands">
+                    <div class="column extra">
+                      <div id="bransformation">
+                        <div>LAKME</div>
+                        <div>lOREAL-PARIS</div>
+                        <div>JOY</div>
+                        <div>AROMA MAGIC</div>
+                        <div>LOTUS HERBALS</div>
+                        <div>BIOTIQUE</div>
+                        <div>VLCC</div>
+                        <div>VEGA</div>
+                        <div>MAYBELLINE</div>
+                        <div>MAMAEARTH</div>
+                        <div>CHICCO</div>
+                        <div>NEUTROGENA</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+        </div>
+        <!-- ========================importent direct button for go to addtocart================================== -->
+       
+      </div><input id="inp" type="text" >
+
+      <!-- navbar end--->
+      <div id="adutbox1">
+
+    
+      </div>
+</body>
+</html>
